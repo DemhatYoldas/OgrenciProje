@@ -42,14 +42,15 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">Öğrenci Ekle</a>
+                            <a href="Default.aspx"><i class="glyphicon glyphicon-list"></i>Öğrenci Listesi </a>
                         </li>
                         <li>
-                            <a href="#">Öğrenci Bul</a>
+                            <a href="OgrenciEkle.aspx"><i class="glyphicon glyphicon-import"></i>Öğrenci Ekle</a>
                         </li>
                         <li>
-                            <a href="#">Öğrenci Sil </a>
+                            <a href="OgrenciBul.aspx"><i class="glyphicon glyphicon-search"></i>Öğrenci Bul</a>
                         </li>
+
                     </ul>
                 </li>
                 <li>
@@ -61,7 +62,7 @@
                         <i class="glyphicon glyphicon-calendar"></i>
                         Mesajlar
                     </a>
-                    
+
                 </li>
                 <li>
                     <a href="#">
@@ -75,13 +76,13 @@
                         Notlar
                     </a>
                 </li>
-                 <li>
+                <li>
                     <a href="#">
                         <i class="glyphicon glyphicon-blackboard"></i>
                         İstatislikler
                     </a>
                 </li>
-                 <li>
+                <li>
                     <a href="#">
                         <i class="glyphicon glyphicon-list"></i>
                         Grafikler
