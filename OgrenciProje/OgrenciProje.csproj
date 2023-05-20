@@ -461,6 +461,9 @@
     <Content Include="Dosyalar1\sidebar\style4.css" />
     <Content Include="Dosyalar1\sidebar\style5.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
+    <Content Include="DuyuruBul.aspx" />
+    <Content Include="DuyuruEkle.aspx" />
+    <Content Include="DuyuruListesi.aspx" />
     <Content Include="OgrenciBul.aspx" />
     <Content Include="OgrenciEkle.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
@@ -482,6 +485,27 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruBul.aspx.cs">
+      <DependentUpon>DuyuruBul.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruBul.aspx.designer.cs">
+      <DependentUpon>DuyuruBul.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruEkle.aspx.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruEkle.aspx.designer.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.designer.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciBul.aspx.cs">
       <DependentUpon>OgrenciBul.aspx</DependentUpon>

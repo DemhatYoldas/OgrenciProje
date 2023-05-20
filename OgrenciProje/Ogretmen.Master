@@ -64,11 +64,23 @@
                     </a>
 
                 </li>
-                <li>
-                    <a href="#">
+                <li class="active">
+                    <a href="#DuyuruSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="glyphicon glyphicon-gift"></i>
-                        Duyurular
+                        Duyuru Listesi
                     </a>
+                    <ul class="collapse list-unstyled" id="DuyuruSubmenu">
+                        <li>
+                            <a href="DuyuruListesi.aspx"><i class="glyphicon glyphicon-list"></i>Duyuru Listesi </a>
+                        </li>
+                        <li>
+                            <a href="DuyuruEkle.aspx"><i class="glyphicon glyphicon-import"></i>Duyuru Ekle</a>
+                        </li>
+                        <li>
+                            <a href="DuyuruBul.aspx"><i class="glyphicon glyphicon-search"></i>Duyuru Bul</a>
+                        </li>
+
+                    </ul>
                 </li>
                 <li>
                     <a href="#">

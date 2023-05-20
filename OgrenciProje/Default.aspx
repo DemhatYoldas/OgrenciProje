@@ -7,7 +7,7 @@
     <div class="table-responsive">
         <table class="table table-hover table-responsive table-bordered">
             <caption>Öğrenci Listesi</caption>
-            
+
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Ad</th>
