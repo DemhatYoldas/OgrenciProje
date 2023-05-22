@@ -11,7 +11,7 @@ namespace OgrenciProje
 {
 
 
-    public partial class DuyuruEkle
+    public partial class DuyuruGuncelle
     {
 
         /// <summary>
@@ -22,6 +22,15 @@ namespace OgrenciProje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
+
+        /// <summary>
+        /// TxtDuyuruid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtDuyuruid;
 
         /// <summary>
         /// TxtDuyuruBaslik control.
@@ -40,15 +49,6 @@ namespace OgrenciProje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTextArea TxtDuyuruİcerik;
-
-        /// <summary>
-        /// TxtDuyuruOgretmen control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TxtDuyuruOgretmen;
 
         /// <summary>
         /// Button1 control.

@@ -51,6 +51,9 @@
     </Reference>
     <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Dashboard.v22.2.Web.WebForms, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxDiagram.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxGantt.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxGauges.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -59,8 +62,11 @@
     <Reference Include="DevExpress.Web.ASPxRichEdit.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxScheduler.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxSpreadsheet.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxTreeList.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.Bootstrap.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v22.2.Web, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v22.2.Web.WebForms, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -463,7 +469,9 @@
     <Content Include="Dosyalar1\StyleSheet2.css" />
     <Content Include="DuyuruBul.aspx" />
     <Content Include="DuyuruEkle.aspx" />
+    <Content Include="DuyuruGuncelle.aspx" />
     <Content Include="DuyuruListesi.aspx" />
+    <Content Include="DuyuruSil.aspx" />
     <Content Include="OgrenciBul.aspx" />
     <Content Include="OgrenciEkle.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
@@ -500,12 +508,26 @@
     <Compile Include="DuyuruEkle.aspx.designer.cs">
       <DependentUpon>DuyuruEkle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DuyuruGuncelle.aspx.cs">
+      <DependentUpon>DuyuruGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruGuncelle.aspx.designer.cs">
+      <DependentUpon>DuyuruGuncelle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DuyuruListesi.aspx.cs">
       <DependentUpon>DuyuruListesi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DuyuruListesi.aspx.designer.cs">
       <DependentUpon>DuyuruListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruSil.aspx.cs">
+      <DependentUpon>DuyuruSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruSil.aspx.designer.cs">
+      <DependentUpon>DuyuruSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciBul.aspx.cs">
       <DependentUpon>OgrenciBul.aspx</DependentUpon>
@@ -659,6 +681,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
