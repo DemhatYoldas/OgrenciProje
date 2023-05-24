@@ -89,7 +89,7 @@ FROM            TBL_OGRENCİ</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciGuncelle" Modifier="Public" Name="OgrenciGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="OgrenciGuncelle">
+              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciGuncelle" Modifier="Public" Name="OgrenciGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="OgrenciGuncelle">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE [TBL_OGRENCİ] SET [OGRAD] = @OGRAD, [OGRSOYAD] = @OGRSOYAD, [OGRTELEFON] = @OGRTELEFON, [OGRMAIL] = @OGRMAIL, [OGRSIFRE] = @OGRSIFRE,  [OGRFOTOGRAF]= @OGRFOTOGRAF WHERE (([OGRID] = @OGRID))</CommandText>
@@ -105,7 +105,7 @@ FROM            TBL_OGRENCİ</CommandText>
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciSil" Modifier="Public" Name="OgrenciSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="OgrenciSil">
+              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciSil" Modifier="Public" Name="OgrenciSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="OgrenciSil">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM [TBL_OGRENCİ] WHERE (([OGRID] = @OGRID))</CommandText>
@@ -191,7 +191,7 @@ VALUES        (@DUYURUBASLIK,@DUYURUICERIK,@DUYURUOGRT)</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DuyuruGuncelle" Modifier="Public" Name="DuyuruGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DuyuruGuncelle">
+              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DuyuruGuncelle" Modifier="Public" Name="DuyuruGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DuyuruGuncelle">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE       TBL_DUYURULAR
@@ -205,7 +205,7 @@ WHERE        (DUYURUID = @DUYURUID)</CommandText>
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DuyuruSil" Modifier="Public" Name="DuyuruSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DuyuruSil">
+              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DuyuruSil" Modifier="Public" Name="DuyuruSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DuyuruSil">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM [TBL_DUYURULAR] WHERE (([DUYURUID] = @ODUYURUID))</CommandText>
@@ -278,6 +278,88 @@ FROM            TBL_OGRETMEN</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OgrNotlarTableAdapter" GeneratorDataComponentClassName="OgrNotlarTableAdapter" Name="OgrNotlar" UserDataComponentName="OgrNotlarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="UdeymSiteDB.dbo.OgrNotlar" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="FillProsedur" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="NotlarıGetir" GeneratorSourceName="FillProsedur" GetMethodModifier="Public" GetMethodName="NotlarıGetir" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="NotlarıGetir" UserSourceName="FillProsedur">
+                <DeleteCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.OgrNotlar</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.OgrNotlar</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.OgrNotlar</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.OgrNotlar</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OGRENCIID" DataSetColumn="OGRENCIID" />
+              <Mapping SourceColumn="OGRENCIADSOYAD" DataSetColumn="OGRENCIADSOYAD" />
+              <Mapping SourceColumn="DERS AD" DataSetColumn="DERS AD" />
+              <Mapping SourceColumn="SINAV1" DataSetColumn="SINAV1" />
+              <Mapping SourceColumn="SINAV2" DataSetColumn="SINAV2" />
+              <Mapping SourceColumn="SINAV3" DataSetColumn="SINAV3" />
+              <Mapping SourceColumn="DERSAD" DataSetColumn="DERSAD" />
+              <Mapping SourceColumn="ORTALAMA" DataSetColumn="ORTALAMA" />
+              <Mapping SourceColumn="DURUM" DataSetColumn="DURUM" />
+              <Mapping SourceColumn="NotID" DataSetColumn="NotID" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillNotIDGetir" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="NotIDGetir" GeneratorSourceName="FillNotIDGetir" GetMethodModifier="Public" GetMethodName="NotIDGetir" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="NotIDGetir" UserSourceName="FillNotIDGetir">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select NotID,OGRENCIID , (OGRAD+' '+OGRSOYAD) AS 'OGRENCIADSOYAD',DERSAD,SINAV1,SINAV2,SINAV3,ORTALAMA,DURUM from TBL_NOTLAR INNER JOIN TBL_OGRENCİ 
+ON TBL_OGRENCİ.OGRID=TBL_NOTLAR.OGRENCIID
+INNER JOIN TBL_DERSLER 
+ON TBL_DERSLER.DERSID=TBL_NOTLAR.DERSNID WHERE NotID=@NotID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="NotID" ColumnName="NotID" DataSourceName="UdeymSiteDB.dbo.TBL_NOTLAR" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@NotID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="NotID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="UdeymSiteDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="NotGuncelle" Modifier="Public" Name="NotGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="NotGuncelle">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       TBL_NOTLAR
+SET                SINAV1 = @SINAV1, SINAV2 = @SINAV2, SINAV3 = @SINAV3, ORTALAMA = @ORTALAMA, DURUM = @DURUM
+WHERE        (NotID = @NOTID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="SINAV1" ColumnName="SINAV1" DataSourceName="UdeymSiteDB.dbo.TBL_NOTLAR" DataTypeServer="tinyint" DbType="Byte" Direction="Input" ParameterName="@SINAV1" Precision="0" ProviderType="TinyInt" Scale="0" Size="1" SourceColumn="SINAV1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="SINAV2" ColumnName="SINAV2" DataSourceName="UdeymSiteDB.dbo.TBL_NOTLAR" DataTypeServer="tinyint" DbType="Byte" Direction="Input" ParameterName="@SINAV2" Precision="0" ProviderType="TinyInt" Scale="0" Size="1" SourceColumn="SINAV2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="SINAV3" ColumnName="SINAV3" DataSourceName="UdeymSiteDB.dbo.TBL_NOTLAR" DataTypeServer="tinyint" DbType="Byte" Direction="Input" ParameterName="@SINAV3" Precision="0" ProviderType="TinyInt" Scale="0" Size="1" SourceColumn="SINAV3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ORTALAMA" ColumnName="ORTALAMA" DataSourceName="UdeymSiteDB.dbo.TBL_NOTLAR" DataTypeServer="decimal(18, 2)" DbType="Decimal" Direction="Input" ParameterName="@ORTALAMA" Precision="18" ProviderType="Decimal" Scale="2" Size="9" SourceColumn="ORTALAMA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DURUM" ColumnName="DURUM" DataSourceName="UdeymSiteDB.dbo.TBL_NOTLAR" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@DURUM" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="DURUM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="NOTID" ColumnName="NotID" DataSourceName="UdeymSiteDB.dbo.TBL_NOTLAR" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@NOTID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="NotID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -325,7 +407,7 @@ FROM            TBL_OGRETMEN</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="OGRFOTOGRAF" msprop:Generator_ColumnPropNameInRow="OGRFOTOGRAF" msprop:Generator_ColumnPropNameInTable="OGRFOTOGRAFColumn" msprop:Generator_ColumnVarNameInTable="columnOGRFOTOGRAF" msprop:Generator_UserColumnName="OGRFOTOGRAF" minOccurs="0">
+              <xs:element name="OGRFOTOGRAF" msprop:Generator_UserColumnName="OGRFOTOGRAF" msprop:Generator_ColumnPropNameInTable="OGRFOTOGRAFColumn" msprop:Generator_ColumnPropNameInRow="OGRFOTOGRAF" msprop:Generator_ColumnVarNameInTable="columnOGRFOTOGRAF" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
@@ -335,63 +417,97 @@ FROM            TBL_OGRETMEN</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBL_DUYURULAR" msprop:Generator_RowEvHandlerName="TBL_DUYURULARRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_DUYURULARRowDeleted" msprop:Generator_RowDeletingName="TBL_DUYURULARRowDeleting" msprop:Generator_RowEvArgName="TBL_DUYURULARRowChangeEvent" msprop:Generator_TablePropName="TBL_DUYURULAR" msprop:Generator_RowChangedName="TBL_DUYURULARRowChanged" msprop:Generator_RowChangingName="TBL_DUYURULARRowChanging" msprop:Generator_TableClassName="TBL_DUYURULARDataTable" msprop:Generator_RowClassName="TBL_DUYURULARRow" msprop:Generator_TableVarName="tableTBL_DUYURULAR" msprop:Generator_UserTableName="TBL_DUYURULAR">
+        <xs:element name="TBL_DUYURULAR" msprop:Generator_RowClassName="TBL_DUYURULARRow" msprop:Generator_RowEvHandlerName="TBL_DUYURULARRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_DUYURULARRowDeleted" msprop:Generator_RowDeletingName="TBL_DUYURULARRowDeleting" msprop:Generator_RowEvArgName="TBL_DUYURULARRowChangeEvent" msprop:Generator_TablePropName="TBL_DUYURULAR" msprop:Generator_RowChangedName="TBL_DUYURULARRowChanged" msprop:Generator_UserTableName="TBL_DUYURULAR" msprop:Generator_RowChangingName="TBL_DUYURULARRowChanging" msprop:Generator_TableClassName="TBL_DUYURULARDataTable" msprop:Generator_TableVarName="tableTBL_DUYURULAR">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="DUYURUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="DUYURUID" msprop:Generator_ColumnPropNameInTable="DUYURUIDColumn" msprop:Generator_ColumnVarNameInTable="columnDUYURUID" msprop:Generator_UserColumnName="DUYURUID" type="xs:int" />
-              <xs:element name="DUYURUBASLIK" msprop:Generator_ColumnPropNameInRow="DUYURUBASLIK" msprop:Generator_ColumnPropNameInTable="DUYURUBASLIKColumn" msprop:Generator_ColumnVarNameInTable="columnDUYURUBASLIK" msprop:Generator_UserColumnName="DUYURUBASLIK" minOccurs="0">
+              <xs:element name="DUYURUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="DUYURUID" msprop:Generator_ColumnPropNameInTable="DUYURUIDColumn" msprop:Generator_ColumnPropNameInRow="DUYURUID" msprop:Generator_ColumnVarNameInTable="columnDUYURUID" type="xs:int" />
+              <xs:element name="DUYURUBASLIK" msprop:Generator_UserColumnName="DUYURUBASLIK" msprop:Generator_ColumnPropNameInTable="DUYURUBASLIKColumn" msprop:Generator_ColumnPropNameInRow="DUYURUBASLIK" msprop:Generator_ColumnVarNameInTable="columnDUYURUBASLIK" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DUYURUICERIK" msprop:Generator_ColumnPropNameInRow="DUYURUICERIK" msprop:Generator_ColumnPropNameInTable="DUYURUICERIKColumn" msprop:Generator_ColumnVarNameInTable="columnDUYURUICERIK" msprop:Generator_UserColumnName="DUYURUICERIK" minOccurs="0">
+              <xs:element name="DUYURUICERIK" msprop:Generator_UserColumnName="DUYURUICERIK" msprop:Generator_ColumnPropNameInTable="DUYURUICERIKColumn" msprop:Generator_ColumnPropNameInRow="DUYURUICERIK" msprop:Generator_ColumnVarNameInTable="columnDUYURUICERIK" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DUYURUOGRT" msprop:Generator_ColumnPropNameInRow="DUYURUOGRT" msprop:Generator_ColumnPropNameInTable="DUYURUOGRTColumn" msprop:Generator_ColumnVarNameInTable="columnDUYURUOGRT" msprop:Generator_UserColumnName="DUYURUOGRT" type="xs:int" minOccurs="0" />
-              <xs:element name="Expr1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_UserColumnName="Expr1" type="xs:int" />
-              <xs:element name="Expr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_UserColumnName="Expr2" minOccurs="0">
+              <xs:element name="DUYURUOGRT" msprop:Generator_UserColumnName="DUYURUOGRT" msprop:Generator_ColumnPropNameInTable="DUYURUOGRTColumn" msprop:Generator_ColumnPropNameInRow="DUYURUOGRT" msprop:Generator_ColumnVarNameInTable="columnDUYURUOGRT" type="xs:int" minOccurs="0" />
+              <xs:element name="Expr1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" type="xs:int" />
+              <xs:element name="Expr2" msprop:Generator_UserColumnName="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Expr3" msprop:Generator_ColumnPropNameInRow="Expr3" msprop:Generator_ColumnPropNameInTable="Expr3Column" msprop:Generator_ColumnVarNameInTable="columnExpr3" msprop:Generator_UserColumnName="Expr3" minOccurs="0">
+              <xs:element name="Expr3" msprop:Generator_UserColumnName="Expr3" msprop:Generator_ColumnPropNameInTable="Expr3Column" msprop:Generator_ColumnPropNameInRow="Expr3" msprop:Generator_ColumnVarNameInTable="columnExpr3" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Expr4" msprop:Generator_ColumnPropNameInRow="Expr4" msprop:Generator_ColumnPropNameInTable="Expr4Column" msprop:Generator_ColumnVarNameInTable="columnExpr4" msprop:Generator_UserColumnName="Expr4" type="xs:int" minOccurs="0" />
+              <xs:element name="Expr4" msprop:Generator_UserColumnName="Expr4" msprop:Generator_ColumnPropNameInTable="Expr4Column" msprop:Generator_ColumnPropNameInRow="Expr4" msprop:Generator_ColumnVarNameInTable="columnExpr4" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBL_OGRETMEN" msprop:Generator_RowEvHandlerName="TBL_OGRETMENRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_OGRETMENRowDeleted" msprop:Generator_RowDeletingName="TBL_OGRETMENRowDeleting" msprop:Generator_RowEvArgName="TBL_OGRETMENRowChangeEvent" msprop:Generator_TablePropName="TBL_OGRETMEN" msprop:Generator_RowChangedName="TBL_OGRETMENRowChanged" msprop:Generator_RowChangingName="TBL_OGRETMENRowChanging" msprop:Generator_TableClassName="TBL_OGRETMENDataTable" msprop:Generator_RowClassName="TBL_OGRETMENRow" msprop:Generator_TableVarName="tableTBL_OGRETMEN" msprop:Generator_UserTableName="TBL_OGRETMEN">
+        <xs:element name="TBL_OGRETMEN" msprop:Generator_RowClassName="TBL_OGRETMENRow" msprop:Generator_RowEvHandlerName="TBL_OGRETMENRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_OGRETMENRowDeleted" msprop:Generator_RowDeletingName="TBL_OGRETMENRowDeleting" msprop:Generator_RowEvArgName="TBL_OGRETMENRowChangeEvent" msprop:Generator_TablePropName="TBL_OGRETMEN" msprop:Generator_RowChangedName="TBL_OGRETMENRowChanged" msprop:Generator_UserTableName="TBL_OGRETMEN" msprop:Generator_RowChangingName="TBL_OGRETMENRowChanging" msprop:Generator_TableClassName="TBL_OGRETMENDataTable" msprop:Generator_TableVarName="tableTBL_OGRETMEN">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="OGRTID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="OGRTID" msprop:Generator_ColumnPropNameInTable="OGRTIDColumn" msprop:Generator_ColumnVarNameInTable="columnOGRTID" msprop:Generator_UserColumnName="OGRTID" type="xs:int" />
-              <xs:element name="OGRTADSOYAD" msprop:Generator_ColumnPropNameInRow="OGRTADSOYAD" msprop:Generator_ColumnPropNameInTable="OGRTADSOYADColumn" msprop:Generator_ColumnVarNameInTable="columnOGRTADSOYAD" msprop:Generator_UserColumnName="OGRTADSOYAD" minOccurs="0">
+              <xs:element name="OGRTID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="OGRTID" msprop:Generator_ColumnPropNameInTable="OGRTIDColumn" msprop:Generator_ColumnPropNameInRow="OGRTID" msprop:Generator_ColumnVarNameInTable="columnOGRTID" type="xs:int" />
+              <xs:element name="OGRTADSOYAD" msprop:Generator_UserColumnName="OGRTADSOYAD" msprop:Generator_ColumnPropNameInTable="OGRTADSOYADColumn" msprop:Generator_ColumnPropNameInRow="OGRTADSOYAD" msprop:Generator_ColumnVarNameInTable="columnOGRTADSOYAD" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="OGRTFOTO" msprop:Generator_ColumnPropNameInRow="OGRTFOTO" msprop:Generator_ColumnPropNameInTable="OGRTFOTOColumn" msprop:Generator_ColumnVarNameInTable="columnOGRTFOTO" msprop:Generator_UserColumnName="OGRTFOTO" minOccurs="0">
+              <xs:element name="OGRTFOTO" msprop:Generator_UserColumnName="OGRTFOTO" msprop:Generator_ColumnPropNameInTable="OGRTFOTOColumn" msprop:Generator_ColumnPropNameInRow="OGRTFOTO" msprop:Generator_ColumnVarNameInTable="columnOGRTFOTO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="OGRTBRANS" msprop:Generator_ColumnPropNameInRow="OGRTBRANS" msprop:Generator_ColumnPropNameInTable="OGRTBRANSColumn" msprop:Generator_ColumnVarNameInTable="columnOGRTBRANS" msprop:Generator_UserColumnName="OGRTBRANS" type="xs:int" minOccurs="0" />
+              <xs:element name="OGRTBRANS" msprop:Generator_UserColumnName="OGRTBRANS" msprop:Generator_ColumnPropNameInTable="OGRTBRANSColumn" msprop:Generator_ColumnPropNameInRow="OGRTBRANS" msprop:Generator_ColumnVarNameInTable="columnOGRTBRANS" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OgrNotlar" msprop:Generator_RowEvHandlerName="OgrNotlarRowChangeEventHandler" msprop:Generator_RowDeletedName="OgrNotlarRowDeleted" msprop:Generator_RowDeletingName="OgrNotlarRowDeleting" msprop:Generator_RowEvArgName="OgrNotlarRowChangeEvent" msprop:Generator_TablePropName="OgrNotlar" msprop:Generator_RowChangedName="OgrNotlarRowChanged" msprop:Generator_RowChangingName="OgrNotlarRowChanging" msprop:Generator_TableClassName="OgrNotlarDataTable" msprop:Generator_RowClassName="OgrNotlarRow" msprop:Generator_TableVarName="tableOgrNotlar" msprop:Generator_UserTableName="OgrNotlar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OGRENCIID" msprop:Generator_ColumnPropNameInRow="OGRENCIID" msprop:Generator_ColumnPropNameInTable="OGRENCIIDColumn" msprop:Generator_ColumnVarNameInTable="columnOGRENCIID" msprop:Generator_UserColumnName="OGRENCIID" type="xs:int" />
+              <xs:element name="OGRENCIADSOYAD" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="OGRENCIADSOYAD" msprop:Generator_ColumnPropNameInTable="OGRENCIADSOYADColumn" msprop:Generator_ColumnVarNameInTable="columnOGRENCIADSOYAD" msprop:Generator_UserColumnName="OGRENCIADSOYAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DERS_x0020_AD" msprop:Generator_ColumnPropNameInRow="DERS_AD" msprop:Generator_ColumnPropNameInTable="DERS_ADColumn" msprop:Generator_ColumnVarNameInTable="columnDERS_AD" msprop:Generator_UserColumnName="DERS AD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SINAV1" msprop:Generator_ColumnPropNameInRow="SINAV1" msprop:Generator_ColumnPropNameInTable="SINAV1Column" msprop:Generator_ColumnVarNameInTable="columnSINAV1" msprop:Generator_UserColumnName="SINAV1" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="SINAV2" msprop:Generator_ColumnPropNameInRow="SINAV2" msprop:Generator_ColumnPropNameInTable="SINAV2Column" msprop:Generator_ColumnVarNameInTable="columnSINAV2" msprop:Generator_UserColumnName="SINAV2" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="SINAV3" msprop:Generator_ColumnPropNameInRow="SINAV3" msprop:Generator_ColumnPropNameInTable="SINAV3Column" msprop:Generator_ColumnVarNameInTable="columnSINAV3" msprop:Generator_UserColumnName="SINAV3" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="DERSAD" msprop:Generator_ColumnPropNameInRow="DERSAD" msprop:Generator_ColumnPropNameInTable="DERSADColumn" msprop:Generator_ColumnVarNameInTable="columnDERSAD" msprop:Generator_UserColumnName="DERSAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORTALAMA" msprop:Generator_ColumnPropNameInRow="ORTALAMA" msprop:Generator_ColumnPropNameInTable="ORTALAMAColumn" msprop:Generator_ColumnVarNameInTable="columnORTALAMA" msprop:Generator_UserColumnName="ORTALAMA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DURUM" msprop:Generator_ColumnPropNameInRow="DURUM" msprop:Generator_ColumnPropNameInTable="DURUMColumn" msprop:Generator_ColumnVarNameInTable="columnDURUM" msprop:Generator_UserColumnName="DURUM" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NotID" msprop:Generator_ColumnPropNameInRow="NotID" msprop:Generator_ColumnPropNameInTable="NotIDColumn" msprop:Generator_ColumnVarNameInTable="columnNotID" msprop:Generator_UserColumnName="NotID" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -413,7 +529,7 @@ FROM            TBL_OGRETMEN</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_TBL_DUYURULAR_TBL_OGRETMEN" msdata:parent="TBL_OGRETMEN" msdata:child="TBL_DUYURULAR" msdata:parentkey="OGRTID" msdata:childkey="DUYURUOGRT" msprop:Generator_UserParentTable="TBL_OGRETMEN" msprop:Generator_UserChildTable="TBL_DUYURULAR" msprop:Generator_RelationVarName="relationFK_TBL_DUYURULAR_TBL_OGRETMEN" msprop:Generator_UserRelationName="FK_TBL_DUYURULAR_TBL_OGRETMEN" msprop:Generator_ChildPropName="GetTBL_DUYURULARRows" msprop:Generator_ParentPropName="TBL_OGRETMENRow" />
+      <msdata:Relationship name="FK_TBL_DUYURULAR_TBL_OGRETMEN" msdata:parent="TBL_OGRETMEN" msdata:child="TBL_DUYURULAR" msdata:parentkey="OGRTID" msdata:childkey="DUYURUOGRT" msprop:Generator_UserParentTable="TBL_OGRETMEN" msprop:Generator_UserChildTable="TBL_DUYURULAR" msprop:Generator_RelationVarName="relationFK_TBL_DUYURULAR_TBL_OGRETMEN" msprop:Generator_ChildPropName="GetTBL_DUYURULARRows" msprop:Generator_ParentPropName="TBL_OGRETMENRow" msprop:Generator_UserRelationName="FK_TBL_DUYURULAR_TBL_OGRETMEN" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
