@@ -10,6 +10,7 @@
 
             <tr>
                 <th scope="col">#</th>
+                <th scope="col">Numara</th>
                 <th scope="col">Ad</th>
                 <th scope="col">Soyad</th>
                 <th scope="col">Telefon</th>
@@ -24,6 +25,7 @@
                         <tr>
 
                             <td><%#Eval("OGRID") %></td>
+                            <td><%#Eval("NUMARA") %></td>
                             <td><%#Eval("OGRAD") %></td>
                             <td><%#Eval("OGRSOYAD") %></td>
                             <td><%#Eval("OGRTELEFON") %></td>

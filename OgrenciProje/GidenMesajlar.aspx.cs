@@ -11,7 +11,9 @@ namespace OgrenciProje
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSetTableAdapters.TBL_MESAJLARTableAdapter dt=new DataSetTableAdapters.TBL_MESAJLARTableAdapter();
+            Repeater1.DataSource= dt.OgretmenGidenMesajlar();
+            Repeater1.DataBind();
         }
     }
 }

@@ -484,7 +484,7 @@
     <Content Include="GelenMesajlar.aspx" />
     <Content Include="GidenMesajlar.aspx" />
     <Content Include="Grafikler.aspx" />
-    <Content Include="Mesajyaz.aspx" />
+    <Content Include="MesajOlustur.aspx" />
     <Content Include="NotGuncelle.aspx" />
     <Content Include="NotListesi.aspx" />
     <Content Include="OgrenciBul.aspx" />
@@ -600,12 +600,12 @@
     <Compile Include="Grafikler.aspx.designer.cs">
       <DependentUpon>Grafikler.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Mesajyaz.aspx.cs">
-      <DependentUpon>Mesajyaz.aspx</DependentUpon>
+    <Compile Include="MesajOlustur.aspx.cs">
+      <DependentUpon>MesajOlustur.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Mesajyaz.aspx.designer.cs">
-      <DependentUpon>Mesajyaz.aspx</DependentUpon>
+    <Compile Include="MesajOlustur.aspx.designer.cs">
+      <DependentUpon>MesajOlustur.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotGuncelle.aspx.cs">
       <DependentUpon>NotGuncelle.aspx</DependentUpon>

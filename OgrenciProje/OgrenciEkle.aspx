@@ -7,6 +7,11 @@
     <form id="Form1" runat="server">
 
         <div>
+            <asp:Label for="TxtOgrNumara" runat="server">Öğrenci Numara</asp:Label>
+            <asp:TextBox ID="TxtOgrNumara" runat="server" CssClass="form-control"></asp:TextBox>
+        </div>
+        <br />
+        <div>
             <asp:Label for="TxtOgrAd" runat="server">Öğrenci Adı</asp:Label>
             <asp:TextBox ID="TxtOgrAd" runat="server" CssClass="form-control"></asp:TextBox>
         </div>

@@ -17,7 +17,7 @@ namespace OgrenciProje
         protected void BtnKaydet(object sender, EventArgs e)
         {
             DataSetTableAdapters.TBL_OGRENCİTableAdapter dt = new DataSetTableAdapters.TBL_OGRENCİTableAdapter();
-            dt.OgrenciEkle(TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTelefon.Text, TxtOgrMail.Text, TxtOgrSifre.Text, TxtOgrFotograf.Text);
+            dt.OgrenciEkle(TxtOgrNumara.Text, TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTelefon.Text, TxtOgrMail.Text, TxtOgrSifre.Text, TxtOgrFotograf.Text);
 
             Response.Redirect("Default.aspx");
         }

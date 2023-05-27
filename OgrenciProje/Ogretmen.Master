@@ -72,7 +72,7 @@
                             <a href="GidenMesajlar.aspx"><i class="glyphicon glyphicon-upload"></i>Giden Mesajlar</a>
                         </li> 
                         <li>
-                            <a href="Mesajyaz.aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a>
+                            <a href="MesajOlustur.aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a>
                         </li>
                       
                     </ul>

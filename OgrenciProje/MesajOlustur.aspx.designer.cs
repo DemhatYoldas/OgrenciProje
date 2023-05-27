@@ -11,7 +11,7 @@ namespace OgrenciProje
 {
 
 
-    public partial class OgrenciEkle
+    public partial class Mesajyaz
     {
 
         /// <summary>
@@ -24,75 +24,48 @@ namespace OgrenciProje
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
 
         /// <summary>
-        /// TxtOgrNumara control.
+        /// TxtMesajGonderen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtOgrNumara;
+        protected global::System.Web.UI.WebControls.TextBox TxtMesajGonderen;
 
         /// <summary>
-        /// TxtOgrAd control.
+        /// TxtMesajAlıcı control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtOgrAd;
+        protected global::System.Web.UI.WebControls.TextBox TxtMesajAlıcı;
 
         /// <summary>
-        /// TxtOgrSoyad control.
+        /// TxtMesajBaslik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtOgrSoyad;
+        protected global::System.Web.UI.WebControls.TextBox TxtMesajBaslik;
 
         /// <summary>
-        /// TxtOgrTelefon control.
+        /// TxtMesajİcerik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtOgrTelefon;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TxtMesajİcerik;
 
         /// <summary>
-        /// TxtOgrMail control.
+        /// BtnMsjGonder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtOgrMail;
-
-        /// <summary>
-        /// TxtOgrSifre control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtOgrSifre;
-
-        /// <summary>
-        /// TxtOgrFotograf control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtOgrFotograf;
-
-        /// <summary>
-        /// BtnKaydets control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnKaydets;
+        protected global::System.Web.UI.WebControls.Button BtnMsjGonder;
     }
 }
