@@ -50,14 +50,14 @@ namespace OgrenciProje
 
 
             // Sorgu4
-            connection.Open();
-            SqlCommand command4 = new SqlCommand("Execute Graf4", connection);
-            SqlDataReader reader4 = command4.ExecuteReader();
-            while (reader4.Read())
-            {
-                WebChartControl6.Series["Series 1"].Points.AddPoint(Convert.ToString(reader4[0]), int.Parse(reader4[1].ToString()));
-            }
-            connection.Close();
+            //connection.Open();
+            //SqlCommand command4 = new SqlCommand("Execute Graf4", connection);
+            //SqlDataReader reader4 = command4.ExecuteReader();
+            //while (reader4.Read())
+            //{
+            //    WebChartControl6.Series["Notlar"].Points.AddPoint(Convert.ToString(reader4[0]), int.Parse(reader4[1].ToString()));
+            //}
+            //connection.Close();
 
 
 

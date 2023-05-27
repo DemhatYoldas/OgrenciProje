@@ -58,11 +58,24 @@
                         <i class="glyphicon glyphicon-briefcase"></i>
                         Dersler
                     </a>
-                    <a href="#">
+                 </li>
+                 <li class="active">
+                    <a href="#MesajlarSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="glyphicon glyphicon-calendar"></i>
                         Mesajlar
                     </a>
-
+                    <ul class="collapse list-unstyled" id="MesajlarSubmenu">
+                        <li>
+                            <a href="GelenMesajlar.aspx"><i class="glyphicon glyphicon-download"></i>Gelen Mesajlar </a>
+                        </li>
+                        <li>
+                            <a href="GidenMesajlar.aspx"><i class="glyphicon glyphicon-upload"></i>Giden Mesajlar</a>
+                        </li> 
+                        <li>
+                            <a href="Mesajyaz.aspx"><i class="glyphicon glyphicon-edit"></i>Mesaj Oluştur</a>
+                        </li>
+                      
+                    </ul>
                 </li>
                 <li class="active">
                     <a href="#DuyuruSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -89,6 +102,12 @@
                         Notlar
                     </a>
                 </li>
+                 <li>
+                    <a href="DersGrafik.aspx">
+                        <i class="glyphicon glyphicon-book"></i>
+                        Derslere Göre Başarı Grafi
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         <i class="glyphicon glyphicon-blackboard"></i>
@@ -109,8 +128,8 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="glyphicon glyphicon-edit"></i>
-                        Ayarlar
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                        Çıkış Yap
                     </a>
                 </li>
             </ul>

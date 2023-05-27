@@ -10,7 +10,7 @@
         <table class="table table-hover table-responsive table-bordered">
             <tr>
                 <td>
-                    <dx:WebChartControl ID="WebChartControl6" runat="server" CrosshairEnabled="True" Height="300px" Width="500px">
+                    <dx:WebChartControl ID="WebChartControl6" runat="server" Height="300px" Width="500px" CrosshairEnabled="True" PaletteName="Violet II">
                         <DiagramSerializable>
                             <dx:XYDiagram>
                                 <AxisX VisibleInPanesSerializable="-1">
@@ -19,8 +19,13 @@
                                 </AxisY>
                             </dx:XYDiagram>
                         </DiagramSerializable>
+                        <Legend BackColor="255, 255, 255"></Legend>
                         <SeriesSerializable>
-                            <dx:Series Name="Series 1">
+                            <dx:Series Name="Notlar">
+                                <ViewSerializable>
+                                    <dx:FullStackedBarSeriesView>
+                                    </dx:FullStackedBarSeriesView>
+                                </ViewSerializable>
                             </dx:Series>
                         </SeriesSerializable>
                     </dx:WebChartControl>
