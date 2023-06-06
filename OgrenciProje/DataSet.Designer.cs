@@ -2563,6 +2563,7 @@ namespace OgrenciProje {
                 this.columnOGRTELEFON.MaxLength = 20;
                 this.columnOGRMAIL.MaxLength = 50;
                 this.columnOGRSIFRE.MaxLength = 50;
+                this.columnOGRCİNSİYET.AllowDBNull = false;
                 this.columnOGRCİNSİYET.MaxLength = 5;
             }
             
@@ -2945,6 +2946,7 @@ namespace OgrenciProje {
                 this.columnOGRTELEFON.MaxLength = 20;
                 this.columnOGRMAIL.MaxLength = 50;
                 this.columnOGRSIFRE.MaxLength = 50;
+                this.columnOGRCİNSİYET.AllowDBNull = false;
                 this.columnOGRCİNSİYET.MaxLength = 5;
             }
             
@@ -4229,12 +4231,7 @@ namespace OgrenciProje {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string OGRCİNSİYET {
                 get {
-                    try {
-                        return ((string)(this[this.tableTBL_MESAJLAR.OGRCİNSİYETColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OGRCİNSİYET\' in table \'TBL_MESAJLAR\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableTBL_MESAJLAR.OGRCİNSİYETColumn]));
                 }
                 set {
                     this[this.tableTBL_MESAJLAR.OGRCİNSİYETColumn] = value;
@@ -4391,18 +4388,6 @@ namespace OgrenciProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOGRCİNSİYETNull() {
-                return this.IsNull(this.tableTBL_MESAJLAR.OGRCİNSİYETColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOGRCİNSİYETNull() {
-                this[this.tableTBL_MESAJLAR.OGRCİNSİYETColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTARIHNull() {
                 return this.IsNull(this.tableTBL_MESAJLAR.TARIHColumn);
             }
@@ -4555,12 +4540,7 @@ namespace OgrenciProje {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string OGRCİNSİYET {
                 get {
-                    try {
-                        return ((string)(this[this.tableTBL_OGRENCİ1.OGRCİNSİYETColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OGRCİNSİYET\' in table \'TBL_OGRENCİ1\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableTBL_OGRENCİ1.OGRCİNSİYETColumn]));
                 }
                 set {
                     this[this.tableTBL_OGRENCİ1.OGRCİNSİYETColumn] = value;
@@ -4649,18 +4629,6 @@ namespace OgrenciProje {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetOGRSIFRENull() {
                 this[this.tableTBL_OGRENCİ1.OGRSIFREColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOGRCİNSİYETNull() {
-                return this.IsNull(this.tableTBL_OGRENCİ1.OGRCİNSİYETColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOGRCİNSİYETNull() {
-                this[this.tableTBL_OGRENCİ1.OGRCİNSİYETColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5041,19 +5009,6 @@ namespace OgrenciProje.DataSetTableAdapters {
             this._adapter.DeleteCommand.CommandText = "DELETE FROM [TBL_OGRENCİ] WHERE (([OGRID] = @Original_OGRID))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OGRID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [TBL_OGRENCİ] ([NUMARA], [OGRAD], [OGRSOYAD], [OGRTELEFON], [OGRMAIL]" +
-                ", [OGRSIFRE], [OGRFOTOGRAF]) VALUES (@NUMARA, @OGRAD, @OGRSOYAD, @OGRTELEFON, @O" +
-                "GRMAIL, @OGRSIFRE, @OGRFOTOGRAF)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NUMARA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMARA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRAD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRSOYAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRSOYAD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRTELEFON", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRTELEFON", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRMAIL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRMAIL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRSIFRE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRSIFRE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRFOTOGRAF", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRFOTOGRAF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [TBL_OGRENCİ] SET [NUMARA] = @NUMARA, [OGRAD] = @OGRAD, [OGRSOYAD] = @OGRS" +
@@ -5222,69 +5177,6 @@ namespace OgrenciProje.DataSetTableAdapters {
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string NUMARA, string OGRAD, string OGRSOYAD, string OGRTELEFON, string OGRMAIL, string OGRSIFRE, string OGRFOTOGRAF) {
-            if ((NUMARA == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NUMARA));
-            }
-            if ((OGRAD == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(OGRAD));
-            }
-            if ((OGRSOYAD == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(OGRSOYAD));
-            }
-            if ((OGRTELEFON == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(OGRTELEFON));
-            }
-            if ((OGRMAIL == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(OGRMAIL));
-            }
-            if ((OGRSIFRE == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(OGRSIFRE));
-            }
-            if ((OGRFOTOGRAF == null)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(OGRFOTOGRAF));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
                 }
             }
         }
@@ -5705,8 +5597,8 @@ namespace OgrenciProje.DataSetTableAdapters {
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ODUYURUID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DUYURUID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "SELECT        DUYURUBASLIK, DUYURUICERIK\r\nFROM            TBL_DUYURULAR\r\nWHERE   " +
-                "     (DUYURUID = @DUYURUID)";
+            this._commandCollection[4].CommandText = "SELECT DUYURUBASLIK, DUYURUICERIK, DUYURUID, DUYURUOGRT FROM TBL_DUYURULAR WHERE " +
+                "(DUYURUID = @DUYURUID)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DUYURUID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DUYURUID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -6935,8 +6827,7 @@ ON TBL_DERSLER.DERSID=TBL_NOTLAR.DERSNID WHERE NotID=@NotID";
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DERSID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "SELECT        DERSID, DERSAD\r\nFROM            TBL_DERSLER\r\nWHERE        (DERSID =" +
-                " @DERSID)";
+            this._commandCollection[4].CommandText = "SELECT DERSAD, DERSID FROM TBL_DERSLER WHERE (DERSID = @DERSID)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DERSID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -7633,7 +7524,8 @@ FROM            TBL_MESAJLAR INNER JOIN
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[12];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        TBL_OGRENCİ.*\r\nFROM            TBL_OGRENCİ";
+            this._commandCollection[0].CommandText = "SELECT        OGRID, NUMARA, OGRAD, OGRSOYAD, OGRFOTOGRAF, OGRTELEFON, OGRMAIL, O" +
+                "GRSIFRE, OGRCİNSİYET\r\nFROM            TBL_OGRENCİ";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -7836,7 +7728,7 @@ WHERE        (sınav1 =
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(OGRSIFRE));
             }
             if ((OGRCİNSİYET == null)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("OGRCİNSİYET");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = ((string)(OGRCİNSİYET));
@@ -7905,7 +7797,7 @@ WHERE        (sınav1 =
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(OGRSIFRE));
             }
             if ((OGRCİNSİYET == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("OGRCİNSİYET");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(OGRCİNSİYET));
